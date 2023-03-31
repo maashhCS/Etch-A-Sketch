@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #3b3b3b;
+    background-color: #2e2e2e;
 }
 
 .container-sketch {
@@ -49,6 +49,7 @@ body {
     width: 600px;
     border: 1px black solid;
     background-color: #ffffff;
+    box-shadow: 0px 0px 5px white;
 }
 
 .square {

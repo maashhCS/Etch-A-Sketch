@@ -6,6 +6,7 @@ let r = 0;
 let g = 0;
 let b = 0;
 let sketchKey = "black";
+let click = "mousedown"
 
 // generates the grid 
 const divContainer = document.querySelector('.container');
@@ -22,12 +23,11 @@ function createDivs(num = 16){
 
     const divSketch = document.querySelectorAll(".square");
     divSketch.forEach(div => {
-        div.addEventListener('click', (e) => {
+        div.addEventListener(`mouseover`, (e) => {
             if(sketchKey === "black"){
                 e.target.style['background-color'] = `rgb(0,0,0)`;
             } else if(sketchKey === "rainbow"){
                 rainbow();
-                console.log(color);
                 e.target.style['background-color'] = `${color}`;
             } else if(sketchKey === "eraser"){
                 e.target.style['background-color'] = `rgb(255,255,255)`;
